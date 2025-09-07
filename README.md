@@ -17,5 +17,3 @@ This is a small practice of **HTML**, **CSS** and **JavaScript**
 <p align="center">
   <img src="screenshot.png" width="300" alt="Calculator Screenshot">
 </p>
-
-![screenshot](screenshot.png)
