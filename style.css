@@ -1,0 +1,86 @@
+.light {
+    --bg-color: hsl(0, 2%, 70%);
+    --bg-gradient: linear-gradient(to bottom, hsl(0, 0%, 66%), hsl(0, 1%, 42%));
+    --display-color: hsl(0, 1%, 49%);
+    --btn-bg: linear-gradient(to bottom, hsl(0, 0%, 85%), hsl(0, 1%, 60%));
+    --op-bg: linear-gradient(to bottom, hsl(32, 87%, 70%), hsl(32, 87%, 50%));
+    --text-color: black;
+}
+
+.dark {
+    --bg-color: hsl(0, 0%, 5%);
+    --bg-gradient: linear-gradient(to bottom, hsl(0, 0%, 13%), hsl(0, 0%, 0%));
+    --display-color: hsl(0, 0%, 20%);
+    --btn-bg: linear-gradient(to bottom, hsl(0, 0%, 35%), hsl(0, 0%, 20%));
+    --op-bg: linear-gradient(to bottom, hsl(32, 87%, 55%), hsl(32, 87%, 40%));
+    --text-color: white;
+}
+
+body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+}
+
+#calculator {
+    max-width: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: var(--bg-gradient)
+}
+
+#display {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--display-color);
+    font-size: 60px;
+    text-align: right;
+    border: none;
+    color: var(--text-color);
+    box-sizing: border-box;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: hsl(0, 0%, 30%);
+    color: var(--text-color);
+    font-weight: bold;
+    background: var(--btn-bg)
+}
+
+.operator {
+    background: var(--op-bg)
+}
+
+button:hover {
+    filter: brightness(1.2);
+}
+
+button:active {
+    filter: brightness(1.4);
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 22px;
+    width: 180px;
+    box-shadow: 1px 1px 4px black;
+}
