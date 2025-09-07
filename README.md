@@ -14,4 +14,8 @@ This is a small practice of **HTML**, **CSS** and **JavaScript**
 - Division
 - **Dark**/**Light** mode toggle
 
+<p align="center">
+  <img src="screenshot.png" width="300" alt="Calculator Screenshot">
+</p>
+
 ![screenshot](screenshot.png)
