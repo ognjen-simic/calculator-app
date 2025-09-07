@@ -13,3 +13,5 @@ This is a small practice of **HTML**, **CSS** and **JavaScript**
 - Multiplication
 - Division
 - **Dark**/**Light** mode toggle
+
+![screenshot](screenshot.png)
