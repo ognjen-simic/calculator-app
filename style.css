@@ -26,6 +26,7 @@ body {
 }
 
 #calculator {
+    width: 90%;
     max-width: 500px;
     border-radius: 15px;
     overflow: hidden;
@@ -36,26 +37,27 @@ body {
     width: 100%;
     padding: 10px;
     background-color: var(--display-color);
-    font-size: 60px;
+    font-size: clamp(24px, 6vw, 60px);
     text-align: right;
     border: none;
     color: var(--text-color);
     box-sizing: border-box;
+    overflow-wrap: anywhere;
 }
 
 #keys {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    padding: 25px;
+    padding: 15px;
 }
 
 button {
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
     font-family: Arial, sans-serif;
-    font-size: 40px;
+    font-size: clamp(20px, 6vw, 40px);
     border: none;
     cursor: pointer;
     background-color: hsl(0, 0%, 30%);
@@ -80,7 +82,9 @@ button:active {
     position: absolute;
     top: 15px;
     left: 15px;
-    font-size: 22px;
-    width: 180px;
+    border-radius: 50px;
+    font-size: clamp(16px, 18px, 20px);
+    width: 8rem;
+    height: 5rem;
     box-shadow: 1px 1px 4px black;
 }
